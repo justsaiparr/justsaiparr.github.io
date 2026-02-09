@@ -1,18 +1,60 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>HW1-Justin Parry</title>
         <style>
-            body {
+            h1 {
                 background-color: lightblue;
             }
+	    #header {
+		background-color: #fdbfbf;
+		border: 1px solid black;
+		padding: 5px;
+	    }
+	    #footer {
+		color: #eeee;
+		font-size: 10pt;
+	    }
+	    #main {
+		display: flex;
+	    }
+	    #side {
+		background-color: lightyellow;
+		border: 1px solid black;
+		margin: 10px;
+		padding: 10px;
+	    }
+        /*
+        .mouseover-link {
+            background: lightblue;
+        }
+            */
+        .mouseover-link:hover {
+            color: red;
+        }
+	    
         </style>
+        <meta name="description" content="This is a website about hedgehogs!">
     </head>
     <body>
-        <h1>hello world</h1>
-        <p> <a href="https://www.google.com">Google</a> </p>
+	<div id="header">
+	  <p>This is my hedgehog site</p>
+	</div>
+	<div id="main">
+	  <div id="content">
+	    <p>This is Oscar, an african pygmie hedgehog!</p>
+	    <img width="400" height="300" src="oscar.jpg">
+	  </div>
+	  <div id="side">
+	    <p>For tips on how to take care of hedgehogs visit the <a class="mouseover-link" href = "https://blog.critterconnection.cc/category/care/">Critter connection blog!</a></p>
+        <p>Please when adopting a hedgehog ensure to adopt from <a class="mouseover-link" href = "https://www.hedgielist.com/">pedigreed breeders</a> to combat possible genetic issues spreading in the domestic hedgehog population.</p>
+	  </div>
+	</div>
+	<div id="footer">
+	  <p>Website made with love.</p>
+	</div>	
     </body>
-      
+    
 </html>
